@@ -168,6 +168,6 @@ lr_config = dict(policy='poly', power=0.9, min_lr=0.0001, by_epoch=False)
 runner = dict(type='IterBasedRunner', max_iters=40000)
 checkpoint_config = dict(by_epoch=False, interval=4000)
 evaluation = dict(interval=4000, metric='mIoU', pre_eval=True)
-work_dir = './work_dirs\deeplabv3plus_r50-d8_512x512_40k_voc12aug'
+work_dir = './work_dirs/deeplabv3plus_r50-d8_512x512_40k_voc12aug'
 gpu_ids = [0]
 auto_resume = False

@@ -132,10 +132,13 @@ data = dict(
         ]),
     test=dict(
         type='PascalVOCDataset',
-        data_root='datasets/2021-03-06-09-52-50/jsons2voc',
-        img_dir='JPEGImages',
-        ann_dir='SegmentationClassPNG',
-        split='test.txt',
+        # data_root='datasets/2021-03-06-09-52-50/jsons2voc',
+        # img_dir='JPEGImages',
+        # ann_dir='SegmentationClassPNG',
+        # split='test.txt',
+        data_root='datasets/2021-03-06-09-52-50',
+        img_dir='imgs_rest',
+        split='imgs_rest.txt',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
